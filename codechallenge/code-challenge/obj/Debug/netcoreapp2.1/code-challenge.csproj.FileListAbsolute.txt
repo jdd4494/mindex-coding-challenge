@@ -1,0 +1,11 @@
+C:\Users\Justin\Downloads\codechallenge\code-challenge\bin\Debug\netcoreapp2.1\code-challenge.deps.json
+C:\Users\Justin\Downloads\codechallenge\code-challenge\bin\Debug\netcoreapp2.1\code-challenge.runtimeconfig.json
+C:\Users\Justin\Downloads\codechallenge\code-challenge\bin\Debug\netcoreapp2.1\code-challenge.runtimeconfig.dev.json
+C:\Users\Justin\Downloads\codechallenge\code-challenge\bin\Debug\netcoreapp2.1\code-challenge.dll
+C:\Users\Justin\Downloads\codechallenge\code-challenge\bin\Debug\netcoreapp2.1\code-challenge.pdb
+C:\Users\Justin\Downloads\codechallenge\code-challenge\obj\Debug\netcoreapp2.1\code-challenge.csprojAssemblyReference.cache
+C:\Users\Justin\Downloads\codechallenge\code-challenge\obj\Debug\netcoreapp2.1\code-challenge.csproj.CoreCompileInputs.cache
+C:\Users\Justin\Downloads\codechallenge\code-challenge\obj\Debug\netcoreapp2.1\code-challenge.AssemblyInfoInputs.cache
+C:\Users\Justin\Downloads\codechallenge\code-challenge\obj\Debug\netcoreapp2.1\code-challenge.AssemblyInfo.cs
+C:\Users\Justin\Downloads\codechallenge\code-challenge\obj\Debug\netcoreapp2.1\code-challenge.dll
+C:\Users\Justin\Downloads\codechallenge\code-challenge\obj\Debug\netcoreapp2.1\code-challenge.pdb
