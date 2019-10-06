@@ -46,25 +46,6 @@ namespace challenge.Data
             // Load compensation data
             if (!_compensationContext.Compensations.Any())
             {
-                // Arrange
-                var employee = new Employee()                {
-                    EmployeeId = "16a596ae-edd3-4847-99fe-c4518e82c86f",
-                    Department = "Engineering",
-                    FirstName = "John",
-                    LastName = "Lennon",
-                    Position = "Development Manager",
-                };
-
-                var compensation = new Compensation()                {
-                    Employee = employee,
-                    Salary = 100000,
-                    EffectiveDate = new DateTime()
-                };
-
-                List<Compensation> compensations = new List<Compensation>();
-                compensations.Add(compensation);
-                _compensationContext.Compensations.AddRange(compensations);
-
                 await _compensationContext.SaveChangesAsync();
             }
         }

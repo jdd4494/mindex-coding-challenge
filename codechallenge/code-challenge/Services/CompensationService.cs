@@ -19,15 +19,15 @@ namespace challenge.Services
             _logger = logger;
         }
 
-        public Compensation Create(Compensation employee)
+        public Compensation Create(Compensation compensation)
         {
-            if(employee != null)
+            if(compensation != null)
             {
-                _compensationRepository.Add(employee);
+                _compensationRepository.Add(compensation);
                 _compensationRepository.SaveAsync().Wait();
             }
 
-            return employee;
+            return compensation;
         }
 
         public Compensation GetById(string id)

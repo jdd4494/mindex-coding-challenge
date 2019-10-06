@@ -14,6 +14,7 @@ using System.Net;
 using System.Net.Http;
 using code_challenge.Tests.Integration.Helpers;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace code_challenge.Tests.Integration
 {
@@ -43,6 +44,12 @@ namespace code_challenge.Tests.Integration
         [TestMethod]
         public void CreateCompensation_Returns_Created()
         {
+            CreateCompensation();
+            QueryCompensation();
+        }
+
+        private void CreateCompensation()
+        {
             // Arrange
             var employee = new Employee()
             {
@@ -64,7 +71,7 @@ namespace code_challenge.Tests.Integration
 
             // Execute
             var postRequestTask = _httpClient.PostAsync("api/compensation",
-               new StringContent(requestContent, Encoding.UTF8, "application/json"));
+                new StringContent(requestContent, Encoding.UTF8, "application/json"));
             var response = postRequestTask.Result;
 
             // Assert
@@ -79,12 +86,12 @@ namespace code_challenge.Tests.Integration
             Assert.AreEqual(employee.Position, newCompensation.Employee.Position);
             Assert.AreEqual(compensation.Salary, newCompensation.Salary);
             Assert.AreEqual(compensation.EffectiveDate, newCompensation.EffectiveDate);
-
         }
 
-        [TestMethod]
-        public void GetCompensationById_Returns_Ok()
+        private async void QueryCompensation()
         {
+            await Task.Delay(5000);
+
             // Arrange
             var employeeId = "16a596ae-edd3-4847-99fe-c4518e82c86f";
             var expectedFirstName = "John";
@@ -101,7 +108,6 @@ namespace code_challenge.Tests.Integration
             Assert.AreEqual(expectedFirstName, compensation.Employee.FirstName);
             Assert.AreEqual(expectedLastName, compensation.Employee.LastName);
             Assert.AreEqual(expectedSalary, compensation.Salary);
-
         }
 
     }
